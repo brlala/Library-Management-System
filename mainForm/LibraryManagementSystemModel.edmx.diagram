@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="85d8a677c3d24bd48e8a298404c17b8d" Name="Diagram1">
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.Author" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.Book" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.Country" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.EmployeeCategory" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.Employee" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.IssueTran" Width="1.5" PointX="7.5" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.MemberCategory" Width="1.5" PointX="3" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.Member" Width="1.5" PointX="5.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.Publisher" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.Reservation" Width="1.5" PointX="10.5" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.StockAdjustment" Width="1.5" PointX="7.5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.sysdiagram" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.Type" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementSystemModel.UserMaster" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Authors_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Books_Publishers" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Books_Types" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_IssueTran_Books" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Reservation_Books" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_StockAdjustment_Books" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Publishers_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Employees_EmployeeCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Employees_UserMasters" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_StockAdjustment_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_IssueTran_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Members_MemberCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Reservation_Members" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.Author_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementSystemModel.FK_Members_Countries" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

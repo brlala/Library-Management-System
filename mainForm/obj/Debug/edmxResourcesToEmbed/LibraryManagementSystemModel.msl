@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryManagementSystemModelStoreContainer" CdmEntityContainer="LibraryManagementSystemEntities">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.Author">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.Book">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="PublisherID" ColumnName="PublisherID" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="BookType" ColumnName="BookType" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="TotalStock" ColumnName="TotalStock" />
+          <ScalarProperty Name="QtyLoaned" ColumnName="QtyLoaned" />
+          <ScalarProperty Name="RecommendedAge" ColumnName="RecommendedAge" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="QtyReserved" ColumnName="QtyReserved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.Country">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeCategories">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.EmployeeCategory">
+        <MappingFragment StoreEntitySet="EmployeeCategories">
+          <ScalarProperty Name="EmployeeCat" ColumnName="EmployeeCat" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="EmployeeCat" ColumnName="EmployeeCat" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="DateHired" ColumnName="DateHired" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ContactTitle" ColumnName="ContactTitle" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IssueTrans">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.IssueTran">
+        <MappingFragment StoreEntitySet="IssueTran">
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
+          <ScalarProperty Name="DateDue" ColumnName="DateDue" />
+          <ScalarProperty Name="DateReturned" ColumnName="DateReturned" />
+          <ScalarProperty Name="LoanStatus" ColumnName="LoanStatus" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ExtensionStatus" ColumnName="ExtensionStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberCategories">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.MemberCategory">
+        <MappingFragment StoreEntitySet="MemberCategories">
+          <ScalarProperty Name="MemberCat" ColumnName="MemberCat" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AllowExtension" ColumnName="AllowExtension" />
+          <ScalarProperty Name="NoOfBooks" ColumnName="NoOfBooks" />
+          <ScalarProperty Name="AllowReservation" ColumnName="AllowReservation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.Member">
+        <MappingFragment StoreEntitySet="Members">
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="NRIC_FIN" ColumnName="NRIC_FIN" />
+          <ScalarProperty Name="MemberCat" ColumnName="MemberCat" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="ContactTitle" ColumnName="ContactTitle" />
+          <ScalarProperty Name="EmailAdd" ColumnName="EmailAdd" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="BooksRented" ColumnName="BooksRented" />
+          <ScalarProperty Name="BooksOverdue" ColumnName="BooksOverdue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publishers">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.Publisher">
+        <MappingFragment StoreEntitySet="Publishers">
+          <ScalarProperty Name="PublisherID" ColumnName="PublisherID" />
+          <ScalarProperty Name="PublisherName" ColumnName="PublisherName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservations">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.Reservation">
+        <MappingFragment StoreEntitySet="Reservation">
+          <ScalarProperty Name="ReservationID" ColumnName="ReservationID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="ReservedOn" ColumnName="ReservedOn" />
+          <ScalarProperty Name="ReservedUntil" ColumnName="ReservedUntil" />
+          <ScalarProperty Name="ReservationStatus" ColumnName="ReservationStatus" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockAdjustments">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.StockAdjustment">
+        <MappingFragment StoreEntitySet="StockAdjustment">
+          <ScalarProperty Name="AdjID" ColumnName="AdjID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="AdjQty" ColumnName="AdjQty" />
+          <ScalarProperty Name="DateAdjusted" ColumnName="DateAdjusted" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Types">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.Type">
+        <MappingFragment StoreEntitySet="Types">
+          <ScalarProperty Name="BookType" ColumnName="BookType" />
+          <ScalarProperty Name="RentalPeriod" ColumnName="RentalPeriod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserMasters">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.UserMaster">
+        <MappingFragment StoreEntitySet="UserMasters">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Author_Book" TypeName="LibraryManagementSystemModel.Author_Book" StoreEntitySet="Author-Book">
+      <EndProperty Name="Authors">
+        <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+      </EndProperty>
+      <EndProperty Name="Books">
+        <ScalarProperty Name="BookID" ColumnName="BookID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="FindAllBooks" FunctionName="LibraryManagementSystemModel.Store.FindAllBooks">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryManagementSystemModel.FindAllBooks_Result">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FindAllBooks_PubName" FunctionName="LibraryManagementSystemModel.Store.FindAllBooks_PubName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryManagementSystemModel.FindAllBooks_PubName_Result">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="PublisherName" ColumnName="PublisherName" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="BookType" ColumnName="BookType" />
+          <ScalarProperty Name="TotalStock" ColumnName="TotalStock" />
+          <ScalarProperty Name="QtyLoaned" ColumnName="QtyLoaned" />
+          <ScalarProperty Name="RecommendedAge" ColumnName="RecommendedAge" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="QtyReserved" ColumnName="QtyReserved" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FindAllEmployees" FunctionName="LibraryManagementSystemModel.Store.FindAllEmployees">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryManagementSystemModel.FindAllEmployees_Result">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="EmployeeCat" ColumnName="EmployeeCat" />
+          <ScalarProperty Name="DateHired" ColumnName="DateHired" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FindAllMembers" FunctionName="LibraryManagementSystemModel.Store.FindAllMembers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryManagementSystemModel.FindAllMembers_Result">
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LAstName" ColumnName="LAstName" />
+          <ScalarProperty Name="MemberCat" ColumnName="MemberCat" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FindOneBook" FunctionName="LibraryManagementSystemModel.Store.FindOneBook">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryManagementSystemModel.FindOneBook_Result">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="PublisherID" ColumnName="PublisherID" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="BookType" ColumnName="BookType" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="TotalStock" ColumnName="TotalStock" />
+          <ScalarProperty Name="QtyLoaned" ColumnName="QtyLoaned" />
+          <ScalarProperty Name="RecommendedAge" ColumnName="RecommendedAge" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="QtyReserved" ColumnName="QtyReserved" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoanStatOut" FunctionName="LibraryManagementSystemModel.Store.LoanStatOut">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryManagementSystemModel.LoanStatOut_Result">
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="LibraryManagementSystemModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="LibraryManagementSystemModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="LibraryManagementSystemModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="LibraryManagementSystemModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryManagementSystemModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="LibraryManagementSystemModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibraryManagementSystemModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="LibraryManagementSystemModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="LibraryManagementSystemModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>
